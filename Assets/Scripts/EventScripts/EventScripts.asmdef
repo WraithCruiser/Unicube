@@ -1,7 +1,9 @@
 {
-    "name": "PlayerScripts",
+    "name": "EventScripts",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:22f53d27f11ca4f40b5bb22748a8e498"
+    ],
     "includePlatforms": [
         "Editor",
         "WSA",
