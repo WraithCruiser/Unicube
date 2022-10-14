@@ -9,15 +9,16 @@ public class PlayerController : MonoBehaviour
     //PlayerContoller Components
     [SerializeField] private Rigidbody2D _playerRigidBody2D;
     //Player Meta
+    public Vector3 _spawnPoint = new Vector3(-4.46f, -3.5f, 0);
     [SerializeField] private float _jumpForce;
     [SerializeField] private float _pushForce;
     [SerializeField] private int _additionalJumpCount;
-    public Vector3 _spawnPoint = new Vector3(-4.46f, -3.5f, 0);
     //Player Control Hotkeys
     [SerializeField] private KeyCode _jumpKey;
     [SerializeField] private KeyCode _leftPushKey;
     [SerializeField] private KeyCode _rightPushKey;
     [SerializeField] private KeyCode _downPushKey;
+    [SerializeField] private KeyCode _respawnKey;
     //Player Physics Fields
     [SerializeField] private ContactFilter2D _contactFilter2D;
     private readonly RaycastHit2D[] _results = new RaycastHit2D[1];
@@ -91,6 +92,11 @@ public class PlayerController : MonoBehaviour
             {
                 SpinRight();
             }
+        }
+        //Respawn
+        if (Input.GetKeyDown(_respawnKey)){
+            _playerRigidBody2D.velocity = Vector2.zero;
+            transform.position = _spawnPoint;
         }
     }
     //Movement Functions
