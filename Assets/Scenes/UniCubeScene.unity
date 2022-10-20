@@ -1058,7 +1058,54 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _reached:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 540372252}
+        m_TargetAssemblyTypeName: DoorAction, EventScripts
+        m_MethodName: OpenDoor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1829423269}
+        m_TargetAssemblyTypeName: DoorAction, EventScripts
+        m_MethodName: OpenDoor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 515537961}
+        m_TargetAssemblyTypeName: PressedPlateAction, EventScripts
+        m_MethodName: Press
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &540372252 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5974487154371716064, guid: db3032d6bef2c304391d0229f81e73dc, type: 3}
+  m_PrefabInstance: {fileID: 8185942537419702297}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19457214a7a03584dafe0b753c2c42cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &568075137
 GameObject:
   m_ObjectHideFlags: 0
@@ -11423,6 +11470,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1829423269 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5974487154371716064, guid: db3032d6bef2c304391d0229f81e73dc, type: 3}
+  m_PrefabInstance: {fileID: 162841125}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19457214a7a03584dafe0b753c2c42cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1880652917
 PrefabInstance:
   m_ObjectHideFlags: 0
