@@ -1185,10 +1185,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 680055807}
-  - component: {fileID: 680055808}
   - component: {fileID: 680055803}
   - component: {fileID: 680055802}
   - component: {fileID: 680055805}
+  - component: {fileID: 680055808}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -10814,6 +10814,18 @@ PrefabInstance:
     - target: {fileID: 9017231862606238033, guid: 425fc96a682328246958f0c1a9f51715, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9017231862606238035, guid: 425fc96a682328246958f0c1a9f51715, type: 3}
+      propertyPath: m_ScaleFactor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9017231862606238035, guid: 425fc96a682328246958f0c1a9f51715, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9017231862606238035, guid: 425fc96a682328246958f0c1a9f51715, type: 3}
+      propertyPath: m_ScreenMatchMode
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 425fc96a682328246958f0c1a9f51715, type: 3}
