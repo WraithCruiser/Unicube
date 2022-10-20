@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 5423156787560170801}
   - component: {fileID: 5423156787560170800}
   - component: {fileID: 5423156787560170803}
-  - component: {fileID: 5423156787560170802}
+  - component: {fileID: 3682935108893733791}
+  - component: {fileID: 2630687089621716511}
   m_Layer: 6
   m_Name: Checkpoint
   m_TagString: Untagged
@@ -112,7 +113,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &5423156787560170802
+--- !u!114 &3682935108893733791
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,23 +122,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 5423156787560170957}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d54229b4f01df054285a2ebed7e257b0, type: 3}
+  m_Script: {fileID: 11500000, guid: d16f049f00a3a0149a852c9763caef4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _reached: {fileID: 2630687089621716511}
+  _spriteRenderer: {fileID: 5423156787560170800}
+  _reachedColor: {r: 0.0627451, g: 0.8980392, b: 0, a: 1}
+--- !u!114 &2630687089621716511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5423156787560170957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6630984c9c3bc194fa9706df7942473a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _reached:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PlayerController, PlayerScripts
-        m_MethodName: SaveSpawnPoint
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _spriteRenderer: {fileID: 5423156787560170800}
-  _pressedColor: {r: 0.03529412, g: 1, b: 0.08627451, a: 1}
+      m_Calls: []

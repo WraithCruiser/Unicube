@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    
-
     //PlayerContoller Components
     [SerializeField] private Rigidbody2D _playerRigidBody2D;
     //Player Meta
-    public Vector3 _spawnPoint = new Vector3(-4.46f, -3.5f, 0);
+    public static Vector3 _spawnPoint = new Vector3(-4.46f, -3.5f, 0);
     [SerializeField] private float _jumpForce;
     [SerializeField] private float _pushForce;
+    [SerializeField] private float _spinTorque;
     [SerializeField] private int _additionalJumpCount;
     //Player Control Hotkeys
     [SerializeField] private KeyCode _jumpKey;
@@ -48,11 +47,6 @@ public class PlayerController : MonoBehaviour
     public void Kill()
     {
         transform.position = _spawnPoint;
-    }
-
-    public void SaveSpawnPoint()
-    {
-        _spawnPoint = transform.position;
     }
 
     private void Update()
@@ -123,12 +117,12 @@ public class PlayerController : MonoBehaviour
     }
     private void SpinLeft()
     {
-        _playerRigidBody2D.AddTorque(0.25f);
+        _playerRigidBody2D.AddTorque(_spinTorque);
         _playerRigidBody2D.AddForce(Vector2.left * _pushForce * Time.deltaTime, ForceMode2D.Impulse);
     }
     private void SpinRight()
     {
-        _playerRigidBody2D.AddTorque(-0.25f);
+        _playerRigidBody2D.AddTorque(-_spinTorque);
         _playerRigidBody2D.AddForce(Vector2.right * _pushForce * Time.deltaTime, ForceMode2D.Impulse);
     }
 }

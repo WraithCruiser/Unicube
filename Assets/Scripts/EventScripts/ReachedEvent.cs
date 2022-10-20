@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class PressurePlate: MonoBehaviour
+public class ReachedEvent: MonoBehaviour
 {
-    [SerializeField] private UnityEvent _reached;
+    [SerializeField] public UnityEvent _reached;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

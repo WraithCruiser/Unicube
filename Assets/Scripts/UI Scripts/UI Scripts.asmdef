@@ -1,10 +1,7 @@
 {
-    "name": "LevelScripts",
+    "name": "UIScripts",
     "rootNamespace": "",
-    "references": [
-        "GUID:22f53d27f11ca4f40b5bb22748a8e498",
-        "GUID:7dd10a0dd84751341adfc657ba625642"
-    ],
+    "references": [],
     "includePlatforms": [
         "Editor",
         "WSA",
